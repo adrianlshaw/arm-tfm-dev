@@ -15,11 +15,6 @@ ENV PATH $PATH:/cmake-3.11.1-Linux-x86_64/bin
 
 RUN pip3 install pycrypto pyasn1
 
-WORKDIR /tmp/
-RUN git clone https://git.trustedfirmware.org/trusted-firmware-m.git --depth=1
-RUN git clone https://github.com/ARMmbed/mbedtls.git -b mbedtls-2.5.1 --depth=1
-RUN git clone https://github.com/ARM-software/CMSIS_5.git -b 5.2.0 --depth=1
-
 RUN mkdir /tmp/trusted-firmware-m/build  
 
 WORKDIR /tmp/
