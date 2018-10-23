@@ -15,8 +15,7 @@ ENV PATH $PATH:/cmake-3.11.1-Linux-x86_64/bin
 
 RUN pip3 install pycrypto pyasn1
 
-RUN mkdir /tmp/trusted-firmware-m/build  
-
+# Get latest upstream QEMU for M33 board
 WORKDIR /tmp/
 RUN wget https://download.qemu.org/qemu-2.12.0.tar.xz
 RUN tar xf qemu-2.12.0.tar.xz
