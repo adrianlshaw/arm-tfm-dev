@@ -1,10 +1,6 @@
 CUR := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 
-fetch_modules:
-	git submodule init
-	git submodule update
-
-docker_build: fetch_modules
+docker_build:
 	docker build -t tfmtest .
 
 cmake_dir:
