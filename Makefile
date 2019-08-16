@@ -12,4 +12,4 @@ all: docker_build cmake_dir
 
 qemu: all
 	docker run -ti --rm -v $(CUR):/opt tfmtest /bin/bash -c \
-	       	"cd trusted-firmware-m/build && qemu-system-arm -M mps2-an505 -kernel bl2/ext/mcuboot/mcuboot.axf  -device loader,file=tfm_sign.bin,addr=0x10080000 -serial stdio -display none"
+	       	"cd trusted-firmware-m/build && qemu-system-arm -M mps2-an521 -kernel bl2/ext/mcuboot/mcuboot.axf  -device loader,file=tfm_sign.bin,addr=0x10080000 -serial stdio -display none"

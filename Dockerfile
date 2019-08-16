@@ -17,9 +17,9 @@ RUN pip3 install pycrypto pyasn1
 
 # Get latest upstream QEMU for M33 board
 WORKDIR /tmp/
-RUN wget https://download.qemu.org/qemu-2.12.0.tar.xz
-RUN tar xf qemu-2.12.0.tar.xz
-RUN cd qemu-2.12.0 && ./configure --target-list=arm-softmmu && make -j4 && make install
+RUN wget https://download.qemu.org/qemu-4.1.0.tar.xz
+RUN tar xf qemu-4.1.0.tar.xz
+RUN cd qemu-4.1.0 && ./configure --target-list=arm-softmmu && make -j4 && make install
 
 WORKDIR /opt/
 
