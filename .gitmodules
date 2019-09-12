@@ -9,3 +9,7 @@
 	path = CMSIS_5
 	url = https://github.com/ARM-software/CMSIS_5.git
 	branch = 5.2.0
+[submodule "mbed-crypto"]
+	path = mbed-crypto
+	url = https://github.com/ARMmbed/mbed-crypto.git
+	branch = mbedcrypto-1.1.0
