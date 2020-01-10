@@ -1,0 +1,12 @@
+[submodule "trusted-firmware-m"]
+	path = trusted-firmware-m
+	url = https://git.trustedfirmware.org/trusted-firmware-m.git
+	branch = TF-Mv1.0-RC3
+[submodule "mbed-crypto"]
+	path = mbed-crypto
+	url = https://github.com/ARMmbed/mbed-crypto.git
+	branch = mbedcrypto-1.1.0
+[submodule "CMSIS_5"]
+	path = CMSIS_5
+	url = https://github.com/ARM-software/CMSIS_5.git
+	branch = 5.5.0
