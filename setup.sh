@@ -20,9 +20,6 @@ tar xf qemu-4.1.0.tar.xz
 cd qemu-4.1.0 && ./configure --target-list=arm-softmmu && make -j4 && make install
 cd ..
 
-git clone https://git.trustedfirmware.org/trusted-firmware-m.git
-git clone https://github.com/ARMmbed/mbed-crypto.git -b mbedcrypto-1.1.0
-git clone https://github.com/ARM-software/CMSIS_5.git -b 5.5.0
 cd CMSIS_5
 git lfs pull
 cd ..
