@@ -1,7 +1,7 @@
 set -e
 
 apt update
-apt install -y build-essential python3-dev python3-pip gcc g++ make timeout \
+apt install -y build-essential python3-dev python3-pip gcc g++ make \
 	git build-essential wget python3-pip python3 git-lfs python libglib2.0-dev \
 	libfdt-dev libpixman-1-dev zlib1g-dev
 
