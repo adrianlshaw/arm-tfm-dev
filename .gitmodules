@@ -6,7 +6,9 @@
 	path = mbed-crypto
 	url = https://github.com/ARMmbed/mbed-crypto.git
 	branch = mbedcrypto-1.1.0
-[submodule "CMSIS_5"]
-	path = CMSIS_5
-	url = https://github.com/ARM-software/CMSIS_5.git
-	branch = 5.5.0
+[submodule "mcuboot"]
+	path = mcuboot
+	url = https://github.com/JuulLabs-OSS/mcuboot.git
+[submodule "tf-m-tests"]
+	path = tf-m-tests
+	url = https://git.trustedfirmware.org/TF-M/tf-m-tests.git
