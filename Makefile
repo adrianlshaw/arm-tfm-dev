@@ -1,4 +1,5 @@
 CUR := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
 
 all:
-	docker run -ti --rm -v $(CUR):/opt ubuntu:19.10 /bin/bash -c "cd /opt && ./setup.sh"
+	docker build -t tfmbuild .
+	docker run -ti --rm -v $(CUR):/opt tfmbuild /bin/bash -c "cd /opt && ./build-and-run.sh"
