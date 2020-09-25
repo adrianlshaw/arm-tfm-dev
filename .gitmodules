@@ -2,13 +2,6 @@
 	path = trusted-firmware-m
 	url = https://git.trustedfirmware.org/trusted-firmware-m.git
 	branch = TF-Mv1.0-RC3
-[submodule "mbed-crypto"]
-	path = mbed-crypto
-	url = https://github.com/ARMmbed/mbed-crypto.git
-	branch = mbedcrypto-1.1.0
-[submodule "mcuboot"]
-	path = mcuboot
-	url = https://github.com/JuulLabs-OSS/mcuboot.git
 [submodule "tf-m-tests"]
 	path = tf-m-tests
 	url = https://git.trustedfirmware.org/TF-M/tf-m-tests.git
