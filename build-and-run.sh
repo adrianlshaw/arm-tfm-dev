@@ -1,5 +1,10 @@
 set -ex
 
+if [ -z $(git config --list | grep email) ]; then
+	git config --global user.email "you@example.com"
+	git config --global user.name "Your Name"
+fi
+
 cd trusted-firmware-m/
 cmake -S . -B cmake_build -DTFM_PLATFORM=mps2/an521 -DTFM_TOOLCHAIN_FILE=toolchain_GNUARM.cmake -DCMAKE_BUILD_TYPE=Debug -DTFM_PROFILE=profile_small -DTEST_PSA_API=CRYPTO
 cd trusted-firmware-m/cmake_build/lib/ext/mbedcrypto-src && git apply ../../../../lib/ext/mbedcrypto/*.patch && ../../../../
